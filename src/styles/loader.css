@@ -1,0 +1,48 @@
+.dots-container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #000;
+    /* border-color: #0055ff; */
+    border-width: 1px;
+  }
+
+  50% {
+    background-color: #000;
+    /* border-color: #0055ff; */
+    border-width: 2px;
+  }
+
+  100% {
+    background-color: #000;
+    /* border-color: #0055ff; */
+    border-width: 3px;
+  }
+}
