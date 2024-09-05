@@ -1,17 +1,45 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+## Install Node on device
 
 First, run the development server:
 
 ```bash
+# installs nvm (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+# download and install Node.js (you may need to restart the terminal)
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.17.0`
+
+# verifies the right npm version is in the environment
+npm -v # should print `10.8.2`
+```
+
+## Getting Started
+
+
+Install Dependencies:
+
+```bash
+npm install
+```
+
+Run App on mecha device:
+
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+
+## To Run this on mehca device
+
+Please Provide params properly:
+
+```bash
+chromium "http://localhost:3000" --kiosk --noerrdialogs --disable-infobars --no-first-run --ozone-platform=wayland --enable-features=OverlayScrollbar --start-maximized --window-size=480,480
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
