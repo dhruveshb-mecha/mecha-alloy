@@ -21,6 +21,14 @@ npm -v # should print `10.8.2`
 
 ## Getting Started
 
+We need to have this .env
+
+```bash
+NEXT_PUBLIC_APP_PROJECT_API_KEY=your-key 
+NEXT_PUBLIC_APP_ORG_ID=your-org-id
+NEXT_PUBLIC_APP_PROJECT_ID=your-project-id
+```
+
 
 Install Dependencies:
 
